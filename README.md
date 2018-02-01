@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+. Course
 
-Things you may want to cover:
+titre:string [present, unique, length 140]
+Description:text [present]
 
-* Ruby version
+. Lessons
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+belongs_to :course
+titre:string [present, length 140, unique]
+course:id [integer]
